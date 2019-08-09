@@ -19,7 +19,10 @@ namespace HeaderImgr.Cli
             try
             {
                 var bitmap = new Bitmap(options.InputPath);
-                new NaiveBitmapBoxBlurrer(options.BlurRadius)
+                new CompositeBitmapOperation(
+                        new VerticalBitmapBlurrer(options.BlurRadius),
+                        new HorizontalBitmapBlurrer(options.BlurRadius)
+                        )
                     .Apply(bitmap)
                     .Save(options.OutputPath);
 
