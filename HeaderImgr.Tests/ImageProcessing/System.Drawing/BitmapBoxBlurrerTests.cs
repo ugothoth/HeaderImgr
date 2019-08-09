@@ -1,11 +1,4 @@
-﻿using System;
-using System.Drawing;
-using System.Linq;
-using FluentAssertions;
-using FsCheck;
-using FsCheck.Xunit;
-using HeaderImgr.ImageProcessing.System.Drawing;
-using Xunit;
+﻿using HeaderImgr.ImageProcessing.System.Drawing;
 
 namespace HeaderImgr.Tests.ImageProcessing.System.Drawing
 {
